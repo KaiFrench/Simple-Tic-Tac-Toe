@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="A Multiplayer Tic-Tac-Toe Game" />
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body class="center">
+          <div class="center" id="main">
+            <h1>Tic-Tac-Toe</h1>
+            <h4>Have Fun!</h4>
+            <button onclick="start()" class="button">Start a New Game</button>
+            <br>
+            <button onclick="learn()" class="button">How To Play</button>
+            <br>
+            <button onclick="exit()" class="button">Exit</button>
+          </div>
+          <div class="center" id="learn">
+            <p>
+                You are X, your opponent is O. 
+                <br>
+                The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.
+                When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
+            </p>
+            <br>
+            <button onclick="main()" class="button">Back</button>
+          </div>
+          <div class="center" id="game">
+            <div class="center" style="margin: 5px;">
+                <h3 id="textComd" style="font-size: 0.9rem;">X to Move</h2>
+            </div>
+            <canvas id="tic-tac-toe-board" class="center"></canvas>
+          </div>
+          <script src="./js/index.js"></script>
+      </body>
+</html>
