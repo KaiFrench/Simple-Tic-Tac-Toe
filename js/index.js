@@ -43,10 +43,6 @@ function learn() {
   document.getElementById("game").style.display = "none";
 }
 
-/* Event Func */
-function exit() {
-  window.close();
-}
 
 function addPlayingPiece(mouse) {
   var xCordinate;
@@ -185,7 +181,7 @@ function checkWhoWin(number) {
 function checkIsOver() {
   //IF BOTH ARE NOT WIN AND NO NEXT MOVE
   if (count >= 9) {
-    alert("It's A Draw!");
+    alert("It's a Draw!");
     window.location.reload();
   }
 }
