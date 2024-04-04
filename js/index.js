@@ -185,7 +185,7 @@ function checkWhoWin(number) {
 function checkIsOver() {
   //IF BOTH ARE NOT WIN AND NO NEXT MOVE
   if (count >= 9) {
-    alert("Game is Over!!!");
+    alert("It's A Draw!");
     window.location.reload();
   }
 }
